@@ -105,16 +105,16 @@ function toggleTemp(scale) {
     // var tempC = Math.round((parseInt(temp.innerHTML) * 5/9) + 32) + '&deg;';
 
     if(scale==='f') {
-        document.getElementById('fahrenheit').style.color = 'blue';
+        document.getElementById('fahrenheit').style.color = 'aliceblue';
         document.getElementById('fahrenheit').removeAttribute('onclick');
-        document.getElementById('celsius').style.color = 'aliceblue';
+        document.getElementById('celsius').style.color = 'blue';
         document.getElementById('celsius').setAttribute('onclick', 'toggleTemp("c")');
         temp.innerHTML = Math.round(parseInt(temp.innerHTML) * 9/5 + 32) + '&deg;';
     }
     if(scale==='c') {
-        document.getElementById('celsius').style.color = 'blue';
+        document.getElementById('celsius').style.color = 'aliceblue';
         document.getElementById('celsius').removeAttribute('onclick');
-        document.getElementById('fahrenheit').style.color = 'aliceblue';
+        document.getElementById('fahrenheit').style.color = 'blue';
         document.getElementById('fahrenheit').setAttribute('onclick', 'toggleTemp("f")')
         temp.innerHTML = Math.round((parseInt(temp.innerHTML) - 32) * 5/9) + '&deg;';
     }
