@@ -1,0 +1,44 @@
+body {
+    background-color: #1d1f21;
+    color: aliceblue;
+    /* overflow: hidden; */
+}
+.weather {
+    font-family: 'Roboto',arial,sans-serif;
+    background-color: #282a2e;
+    padding: 20px 16px 24px 16px;
+    line-height: 1.2;
+    font-size: medium;
+    width: 75%;
+    max-width: 632px;
+    margin: 10% auto;
+    overflow: hidden;
+}
+#location {
+    font-size: x-large;
+    margin: 0;
+}
+#weatherIcon {
+    margin-top: 20px;
+    float: left;
+    /* display: inline-block; */
+}
+.detailedWeather {
+    float: right;
+    padding-top: 20px;
+}
+#temp {
+    /* display: inline-block; */
+    float: left;
+    margin-top: 15px;
+    padding-left: 10px;
+    font-size: 50px;
+}
+.tempUnits {
+    float: left;
+    margin-top: 23px;
+    margin-left: 10px;
+}
+#celsius {
+    color: blue;
+}
