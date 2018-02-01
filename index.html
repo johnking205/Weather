@@ -1,33 +1,34 @@
 <!DOCTYPE html lang="en-US">
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="author" content="John Sterrett" />
-        <meta name="description" content="John Sterrett Front-End Engineer HTML CSS JS" />
-
-        <title>Your Weather</title>
-        <link rel="stylesheet" href="weather.css" />
-        <script type="text/javascript" src="external.js"></script>
-        <link rel="icon" href="placeholder.png" /> <!-- http://icons.iconarchive.com/icons/graphicloads/100-flat/64/contact-icon.png -->
-    </head>
-    <body onload="weatherRequest()">
-        <div class='weather'>
-            <div id='location'>Your Location</div>
-            <div id='dayOfWeek'>Current Day</div>
-            <div id='weatherDescription'>Your Weather</div>
-            <img src='#' id='weatherIcon'>
-            <!-- <div id='temp'>55&deg;</div> -->
-            <div class='detailedWeather'>
-                <div id='windSpeed'>Wind Speed: </div>
-                <div id='windDir'>Wind Direction: </div>
-                <div id='humid'>Humidity: %</div>
-            </div>
-            <div id='temp'>55&deg;</div>
-            <span class='tempUnits'>
-                <span id='fahrenheit' onclick='toggleTemp("f")'>F</span>
-                |
-                <span id='celsius'>C</span>
-            </span>
-        </div>
-    </body>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="author" content="John Sterrett" />
+  <meta name="description" content="John Sterrett Front-End Engineer HTML CSS JS" />
+  
+  <title>Your Weather</title>
+  <link rel="stylesheet" href="weather.css" />
+  <script type="text/javascript" src="external.js"></script>
+  <link rel="icon" href="placeholder.png" /> <!-- http://icons.iconarchive.com/icons/graphicloads/100-flat/64/contact-icon.png -->
+</head>
+<body onload="weatherRequest()">
+  <div class='weather'>
+    <div id='location'>Your Location</div>
+    <div id='dayOfWeek'>Current Day</div>
+    <div id='weatherDescription'>Your Weather</div>
+    <img src='#' id='weatherIcon'>
+    <!-- <div id='temp'>55&deg;</div> -->
+    <div class='detailedWeather'>
+      <div id='windSpeed'>Wind Speed: </div>
+      <div id='windDir'>Wind Direction: </div>
+      <div id='humid'>Humidity: %</div>
+    </div>
+    <div id='temp'>55&deg;</div>
+    <span class='tempUnits'>
+      <span id='fahrenheit' onclick='toggleTemp("f")'>F</span>
+      |
+      <span id='celsius'>C</span>
+    </span>
+  </div>
+</body>
 </html>
